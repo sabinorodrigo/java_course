@@ -8,13 +8,18 @@ public class ValorNulo {
 		
 		System.out.println(s1.concat("!!!"));
 		
-		Data d1 = null;
+		Data d1 = Math.random() > 0.5 ? new Data() :  null;
 		if (d1 != null) {
-			
 			d1.mes = 3;
+			System.out.println(d1.obterDataFormatado());
 		}
 		
-		String s2= null;
-		System.out.println(s2.concat("???"));
+		String s2= Math.random() > 0.5 ? "Hello, World" :  null;
+
+		if (s2 != null) {
+			
+			System.out.println(s2.concat("???"));
+		}
+		
 	}
 }
